@@ -5,16 +5,27 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "odatawebapimongo", "odatawebapimongo\odatawebapimongo.csproj", "{DFE117A9-930A-49CF-9705-29F9E90AD1E4}"
 EndProject
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "Integration Services Project1", "Integration Services Project1\Integration Services Project1.dtproj", "{C8FB757C-85E8-4F7D-BF6E-2A5912E4CA6F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Development|Any CPU = Development|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{DFE117A9-930A-49CF-9705-29F9E90AD1E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{DFE117A9-930A-49CF-9705-29F9E90AD1E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFE117A9-930A-49CF-9705-29F9E90AD1E4}.Development|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFE117A9-930A-49CF-9705-29F9E90AD1E4}.Development|Any CPU.Build.0 = Debug|Any CPU
 		{DFE117A9-930A-49CF-9705-29F9E90AD1E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DFE117A9-930A-49CF-9705-29F9E90AD1E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8FB757C-85E8-4F7D-BF6E-2A5912E4CA6F}.Debug|Any CPU.ActiveCfg = Development
+		{C8FB757C-85E8-4F7D-BF6E-2A5912E4CA6F}.Debug|Any CPU.Build.0 = Development
+		{C8FB757C-85E8-4F7D-BF6E-2A5912E4CA6F}.Development|Any CPU.ActiveCfg = Development
+		{C8FB757C-85E8-4F7D-BF6E-2A5912E4CA6F}.Development|Any CPU.Build.0 = Development
+		{C8FB757C-85E8-4F7D-BF6E-2A5912E4CA6F}.Release|Any CPU.ActiveCfg = Development
+		{C8FB757C-85E8-4F7D-BF6E-2A5912E4CA6F}.Release|Any CPU.Build.0 = Development
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

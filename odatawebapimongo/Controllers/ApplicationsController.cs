@@ -24,11 +24,11 @@ namespace odatawebapimongo.Controllers
 
         }
 
-        [EnableQuery]
-        public IQueryable<BsonDocument> Get()
+        [EnableQuery(PageSize = 10000)]
+        public IQueryable<Application> Get()
         {
 
-            var applications = _db.GetCollection<BsonDocument>("applications").AsQueryable();
+            var applications = _db.GetCollection<Application>("applications").AsQueryable();
             return applications;
         }
 
