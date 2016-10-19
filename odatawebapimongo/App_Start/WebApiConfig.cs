@@ -13,6 +13,7 @@ namespace odatawebapimongo
 
             builder.EntitySet<Product>("Products");
             builder.EntitySet<Application>("Applications").EntityType.HasKey(a=>a.Id);
+            builder.EntitySet<SubItem>("Subitem").EntityType.HasKey(a => a.Id);
             config.MapODataServiceRoute("ODataRoute", null, builder.GetEdmModel());
         }
     }
