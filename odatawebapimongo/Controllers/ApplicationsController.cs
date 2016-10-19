@@ -19,16 +19,15 @@ namespace odatawebapimongo.Controllers
 
         public ApplicationsController()
         {
-            _client = new MongoClient("mongodb://eratedemo:eratedemo@ds057934.mlab.com:57934/eratedemo");
+            _client = new MongoClient("mongodb://127.0.0.1/eratedemo");
             _db = _client.GetDatabase("eratedemo");
-
         }
 
-        [EnableQuery]
-        public IQueryable<BsonDocument> Get()
+        [EnableQuery(PageSize = 100)]
+        public IQueryable<Application> Get()
         {
 
-            var applications = _db.GetCollection<BsonDocument>("applications").AsQueryable();
+            var applications = _db.GetCollection<Application>("applications").AsQueryable();
             return applications;
         }
 
