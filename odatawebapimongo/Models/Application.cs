@@ -39,9 +39,9 @@ namespace odatawebapimongo.Models
         [BsonElement("Applicant State")]
         public string ApplicantState { get; set; }
         [BsonElement("Applicant Zip Code")]
-        public int ApplicantZipCode { get; set; }
+        public string ApplicantZipCode { get; set; }
         [BsonElement("SPIN")]
-        public int Spin { get; set; }
+        public string Spin { get; set; }
         [BsonElement("Service Provider Name")]
         public string ServiceProviderName { get; set; }
         [BsonElement("Commitment Status")]
@@ -96,7 +96,7 @@ namespace odatawebapimongo.Models
         [BsonElement("Cmtd R Eligible Cost")]
         public string CmtdREligibleCost { get; set; }
         [BsonElement("Cmtd R Months of Service")]
-        public int CmtdRMonthsofService { get; set; }
+        public string CmtdRMonthsofService { get; set; }
         [BsonElement("Cmtd R Annual Cost")]
         public string CmtdRAnnualCost { get; set; }
         [BsonElement("Cmtd NR Cost")]
@@ -108,7 +108,7 @@ namespace odatawebapimongo.Models
         [BsonElement("Cmtd Total Cost")]
         public string CmtdTotalCost { get; set; }
         [BsonElement("Cmtd Discount")]
-        public double CmtdDiscount { get; set; }
+        public string CmtdDiscount { get; set; }
         [BsonElement("Cmtd Commitment Request")]
         public string CmtdCommitmentRequest { get; set; }
         [BsonElement("Orig 471 SSD")]
