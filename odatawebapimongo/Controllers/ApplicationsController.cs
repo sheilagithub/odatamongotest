@@ -19,12 +19,15 @@ namespace odatawebapimongo.Controllers
 
         public ApplicationsController()
         {
-            _client = new MongoClient("mongodb://eratedemo:eratedemo@ds057934.mlab.com:57934/eratedemo");
-            _db = _client.GetDatabase("eratedemo");
+
+            //_client = new MongoClient("mongodb://localhost:27017");
+
+             _client = new MongoClient(@"mongodb://eratedemo:eratedemo@ds044989.mlab.com:44989/eratedemo");
+            _db = _client.GetDatabase("applications");
 
         }
 
-        [EnableQuery(PageSize = 10000)]
+        [EnableQuery(PageSize = 5000)]
         public IQueryable<Application> Get()
         {
 
