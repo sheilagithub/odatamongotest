@@ -10,8 +10,6 @@ namespace odatawebapimongo
         public static void Register(HttpConfiguration config)
         {
             var builder = new ODataConventionModelBuilder();
-
-            builder.EntitySet<Product>("Products");
             builder.EntitySet<Application>("Applications").EntityType.HasKey(a => a.Id);
             config.MapODataServiceRoute("ODataRoute", null, builder.GetEdmModel());
         }
